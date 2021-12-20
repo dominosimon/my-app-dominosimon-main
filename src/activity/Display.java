@@ -1,24 +1,23 @@
 package activity;
-
 import testing.ActivityTest;
-
+import activity.Circles;
 import javax.swing.JFrame;
+import java.awt.*;
 
 public class Display {
-    private static Object ActivityTest;
 
+    //Display takes a graphic object
     public static void main(String[] args) {
         JFrame displayFrame = new JFrame();
-        ActivityTest activityTesting = new ActivityTest();
+        ActivityTest activityTest = new ActivityTest();
 
         displayFrame.setSize(500, 500);
-        displayFrame.setTitle("Test");
+        displayFrame.setTitle("Display Window");
         displayFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        displayFrame.add(activityTesting);
+        displayFrame.add(activityTest);
 
         displayFrame.setVisible(true);
     }
-
-
 }
+   //public static void display(Graphics g, Circles c, Color b) {
